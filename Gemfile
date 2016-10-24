@@ -13,6 +13,7 @@ gem 'sass-rails', '>= 3.2'
 gem "paperclip", "~> 5.0.0"
 gem 'devise'
 gem 'coffee-script-source', '1.8.0'
+gem 'rb-readline', '0.5.3'
 
 group :development, :test do
   gem 'sqlite3'

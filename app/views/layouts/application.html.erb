@@ -10,7 +10,16 @@
 <div class="container">
   <%= render 'layouts/header' %>
 
-  <%= yield %>
+  <div class='row'>
+    <div class='col-xs-3'>
+      <%= render 'layouts/aside' %>
+    </div>
+    <div class='col-xs-9'>
+      <%= yield %>
+
+    </div>
+  </div>
+
 
   <%= render 'layouts/footer' %>
 

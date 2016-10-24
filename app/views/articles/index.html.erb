@@ -7,7 +7,7 @@
 <div class='message'>
   <div class='subject'><%= article.title %></div>
   <div class='body'><%= article.body %></div>
-  <div class='row'>
+  <div class='row buttons'>
     <%= link_to 'Show', article, class: 'btn btn-primary' %>
     <%= link_to 'Edit', edit_article_path(article), class: 'btn btn-warning' %>
     <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
