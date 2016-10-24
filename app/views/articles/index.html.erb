@@ -4,9 +4,17 @@
 
 <% @articles.each do |article| %>
 
-<div class='message'>
+<div class='message jumbotron'>
   <div class='subject'><%= article.title %></div>
-  <div class='body'><%= article.body %></div>
+  <div class='body'><%= article.body %>
+    <div class="article-meta-details">
+
+    <small>Created by: <%= article.user.username if article.user %>,
+    <%= time_ago_in_words(article.created_at) %> ago,
+    last updated: <%= time_ago_in_words(article.updated_at) %> ago</small>
+    </div>
+  </div>
+
   <div class='row buttons'>
     <%= link_to 'Show', article, class: 'btn btn-primary' %>
     <%= link_to 'Edit', edit_article_path(article), class: 'btn btn-warning' %>

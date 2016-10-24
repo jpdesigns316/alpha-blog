@@ -14,6 +14,7 @@ gem "paperclip", "~> 5.0.0"
 gem 'devise'
 gem 'coffee-script-source', '1.8.0'
 gem 'rb-readline', '0.5.3'
+gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
   gem 'sqlite3'
