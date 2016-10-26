@@ -15,6 +15,8 @@ gem 'devise'
 gem 'coffee-script-source', '1.8.0'
 gem 'rb-readline', '0.5.3'
 gem 'bcrypt', '~> 3.1.7'
+gem 'will_paginate', '3.0.7'
+gem 'bootstrap-will_paginate', '0.0.10'
 
 group :development, :test do
   gem 'sqlite3'
